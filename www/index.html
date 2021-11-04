@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="theme-dark">
 <head>
     <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
@@ -40,61 +40,44 @@
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
        
-            <!-- Top Navbar -->
-            <div class="navbar">
-                <div class="navbar-bg"></div>
-                <div class="navbar-inner">
-                    <div class="left"><i class="icon icon-back"></i></div>
-                    <div class="title">Page Title</div>
-                    <div class="right"><i class="icon icon-forward"></i></div>
-                </div>
-            </div>
-    
-            <!-- Toolbar -->
-            <div class="toolbar toolbar-bottom">
-                <div class="toolbar-inner">
-                <!-- Toolbar links -->
-                <a href="#" class="link">Link 1</a>
-                <a href="#" class="link">Link 2</a>
+        <!--NAVBAR-->
+            <div class="page no-navbar no-toolbar no-swipeback">
+                <div class="page-content login-screen-content">
+                  <div class="login-screen-title">TrainingMe</div>
+                  <form>
+                    <div class="list">
+                      <ul>
+                        <li class="item-content item-input">
+                          <div class="item-inner">
+                            <div class="item-title item-label">Usuario</div>
+                            <div class="item-input-wrap">
+                              <input type="text" name="username" placeholder="Tu Usuario" />
+                            </div>
+                          </div>
+                        </li>
+                        <li class="item-content item-input">
+                          <div class="item-inner">
+                            <div class="item-title item-label">Contraseña</div>
+                            <div class="item-input-wrap">
+                              <input type="password" name="password" placeholder="Tu Contraseña" />
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="list">
+                      <ul>
+                        <a href="/pagina1/" class="list-button">Entrar</a>
+                      </ul> 
+                    </div>
+                  </form>
                 </div>
             </div>
         
-        <!-- Initial Page, "data-name" contains page name -->
-            <div data-name="index" class="page">
-                <!-- Scrollable page content -->
-                <div class="page-content">
-                    <div class="block">
-                        <p>Page content goes here</p>
-                        <!-- Link to another page -->
-                        <a href="/about/" data-view=".page-content">About app</a>
 
-                        <!-- In data-popup attribute we specify CSS selector of popup we need to open -->
-                        <p><a href="#" data-popup=".my-popup" class="popup-open">Open Popup</a></p>
 
-                        <!-- And somewhere in DOM -->
-                        <div class="popup my-popup">
-                            <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA JAJAJAJ GALLINA PUTA</p>
-                            <div class="view">
-                                <div class="page">
-                                    <div class="navbar">
-                                        <div class="navbar-bg"></div>
-                                        <div class="navbar-inner">
-                                            <div class="title">Popup</div>
-                                            <div class="right">
-                                                <!-- Link to close popup -->
-                                                <a class="link popup-close">Close</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="page-content">
-                                      ...
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        
         </div>
     </div>
 
